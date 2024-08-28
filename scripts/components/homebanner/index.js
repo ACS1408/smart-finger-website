@@ -7,6 +7,7 @@ import "swiper/css/bundle";
   const swiper = new Swiper(".home-banner__carousel", {
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
 })();
