@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./components/header";
+@import "./components/homebanner";
+
+:root {
+  // colors
+  --sf-primary: #026c62;
+  --sf-secondary: #25272d;
+  --sf-black: #000000;
+  --sf-white: #ffffff;
+  --sf-error: #fb5d5d;
+  --sf-warning: #ffd500;
+  --sf-success: #11f942;
+  --sf-transparent: #00000000;
+  --sf-grey: #ededed;
+
+  // font weights
+  --sf-font-light: 300;
+  --sf-font-regular: 400;
+  --sf-font-medium: 500;
+  --sf-font-semibold: 600;
+  --sf-font-bold: 700;
+
+  // font sizes
+  --sf-text-h1: 3rem;
+  --sf-text-h2: 2.25rem;
+  --sf-text-h3: 1.75rem;
+  --sf-text-h4: 1.5rem;
+  --sf-text-h5: 1.25rem;
+  --sf-text-h6: 1.125rem;
+  --sf-text-p: 1rem;
+
+  // spacings
+  --sf-gutter-x: 24px;
+}
+
+@layer base {
+  body {
+    font-family: "Manrope", sans-serif;
+  }
+
+  h1,
+  .h1 {
+    &:not(.ttl) {
+      @apply text-h1;
+    }
+  }
+
+  h2,
+  .h2 {
+    &:not(.ttl) {
+      @apply text-h2;
+    }
+  }
+
+  h3,
+  .h3 {
+    &:not(.ttl) {
+      @apply text-h3;
+    }
+  }
+
+  h4,
+  .h4 {
+    &:not(.ttl) {
+      @apply text-h4;
+    }
+  }
+
+  h5,
+  .h5 {
+    &:not(.ttl) {
+      @apply text-h5;
+    }
+  }
+
+  h6,
+  .h6 {
+    &:not(.ttl) {
+      @apply text-h6;
+    }
+  }
+
+  p,
+  .p {
+    &:not(.para) {
+      @apply text-p;
+    }
+  }
+}
+
+@layer components {
+  // container
+  .container {
+    @apply sm:max-w-[540px] md:max-w-[720px] 
+    lg:max-w-[960px] xl:max-w-[1080px] 
+    xxl:max-w-[1260px] xxxl:max-w-[1403px];
+  }
+}
+
+@layer utilities {
+  .section-title {
+    @apply text-[42px] text-black font-bold mb-10;
+  }
+}

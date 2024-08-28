@@ -1,0 +1,12 @@
+.carousel-image {
+  &::after {
+    @apply content-[""] w-full h-3/4 absolute bottom-0 left-0 bg-gradient-to-t from-[#000000bf] to-transparent;
+  }
+}
+.swiper-pagination {
+  --swiper-pagination-color: var(--sf-white);
+  --swiper-pagination-bullet-inactive-color: var(--sf-white);
+  --swiper-pagination-bullet-width: 40px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-border-radius: 0;
+}
