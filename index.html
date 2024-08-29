@@ -1,264 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00b2ff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#00b2ff" />
 
-    <link rel="stylesheet" href="./styles/css/globals.min.css" />
-    <title>Smart Finger | Home</title>
-  </head>
-  <body>
-    <!-- Layout: Header -->
-    <header
-      class="main-header bg-white py-4 border-b border-grey sticky top-0 z-[1024]"
-    >
-      <div class="container flex items-center justify-between gap-4">
-        <a href="/" class="max-w-[150px]">
-          <figure class="main-header__logo">
-            <img src="/images/smart-finger-logo.png" alt="Smart Finger Logo" />
-          </figure>
-        </a>
-        <nav class="main-header__nav flex items-center gap-10">
-          <div class="main-header__nav--item">
-            <a href="/">Home</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/css/globals.min.css" />
+  <title>Smart Finger | Home</title>
+</head>
+
+<body>
+  <!-- Layout: Header -->
+  <header class="main-header bg-white py-4 border-b border-grey sticky top-0 z-[1024]">
+    <div class="container flex items-center justify-between gap-4">
+      <a href="/" class="max-w-[150px]">
+        <figure class="main-header__logo">
+          <img src="/images/smart-finger-logo.png" alt="Smart Finger Logo" />
+        </figure>
+      </a>
+      <nav class="main-header__nav flex items-center gap-10">
+        <div class="main-header__nav--item">
+          <a href="/">Home</a>
+        </div>
+        <div class="main-header__nav--item">
+          <a href="/">About us</a>
+        </div>
+        <div class="main-header__nav--item">
+          <a href="/">Products</a>
+        </div>
+        <div class="main-header__nav--item">
+          <a href="/">Solutions</a>
+        </div>
+        <div class="main-header__nav--item">
+          <a href="/">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Layout: Main -->
+  <main class="home-page">
+    <!-- Section: Banner -->
+    <section class="home-banner">
+      <div class="swiper home-banner__carousel">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide relative">
+            <figure class="carousel-image absolute top-0 left-0 size-full">
+              <img src="/images/home/banner/banner-1.webp" alt="home banner carousel image"
+                class="size-full object-cover" />
+            </figure>
+            <div class="container z-[2] relative">
+              <div
+                class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]">
+                <div class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]">
+                  <span class="block text-white text-2xl font-bold mb-1">ORBITA</span>
+                  Hotel Lock Passed UL-10C Test
+                </div>
+                <p class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4">
+                  The UL-10C test evaluates the ability of a door lock to
+                  withstand a 450-degree Fahrenheit fire for 3 hours
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="main-header__nav--item">
-            <a href="/">About us</a>
+          <!-- Slide 2 -->
+          <div class="swiper-slide relative">
+            <figure class="carousel-image absolute top-0 left-0 size-full">
+              <img src="/images/home/banner/banner-2.webp" alt="home banner carousel image"
+                class="size-full object-cover" />
+            </figure>
+            <div class="container z-[2] relative">
+              <div
+                class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]">
+                <div class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]">
+                  <span class="block text-white text-2xl font-bold mb-1">ORBITA</span>
+                  Smart Hotel Locks
+                </div>
+                <p class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4">
+                  We are committed to providing you with high quality products
+                  and services Serving over 20,000 hotels in more than 120
+                  countries around the world
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="main-header__nav--item">
-            <a href="/">Products</a>
+          <!-- Slide 3 -->
+          <div class="swiper-slide relative">
+            <figure class="carousel-image absolute top-0 left-0 size-full">
+              <img src="/images/home/banner/banner-3.webp" alt="home banner carousel image"
+                class="size-full object-cover" />
+            </figure>
+            <div class="container z-[2] relative">
+              <div
+                class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]">
+                <div class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]">
+                  <span class="block text-white text-2xl font-bold mb-1">ORBITA</span>
+                  Hotel Minibar
+                </div>
+                <ul class="carousel-description flex flex-col gap-2 text-lg font-regular text-white mt-4">
+                  <li>Cooling by ammonia</li>
+                  <li>Nomoving part, no compressor</li>
+                  <li>Free maintenance & long life</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="main-header__nav--item">
-            <a href="/">Solutions</a>
+          <!-- Slide 4 -->
+          <div class="swiper-slide relative">
+            <figure class="carousel-image absolute top-0 left-0 size-full">
+              <img src="/images/home/banner/banner-4.webp" alt="home banner carousel image"
+                class="size-full object-cover" />
+            </figure>
+            <div class="container z-[2] relative">
+              <div
+                class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]">
+                <div class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]">
+                  <span class="block text-white text-2xl font-bold mb-1">ORBITA</span>
+                  Hotel Safe
+                </div>
+                <ul class="carousel-description flex flex-col gap-2 text-lg font-regular text-white mt-4">
+                  <li>Co5 MM Cold-Rolled Steel Door</li>
+                  <li>Two 3/4 inch (19MM) Diameter Steel Locking Bolts</li>
+                  <li>Scratch- Resistant Powder Coated Finish</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="main-header__nav--item">
-            <a href="/">Contact</a>
+          <!-- Slide 5 -->
+          <div class="swiper-slide relative">
+            <figure class="carousel-image absolute top-0 left-0 size-full">
+              <img src="/images/home/banner/banner-5.webp" alt="home banner carousel image"
+                class="size-full object-cover" />
+            </figure>
+            <div class="container z-[2] relative">
+              <div
+                class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]">
+                <div class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]">
+                  <span class="block text-white text-2xl font-bold mb-1">ORBITA</span>
+                  Smart Hotel System
+                </div>
+                <p class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4">
+                  We provides you with professional intelligent smart hotel
+                  solution
+                </p>
+              </div>
+            </div>
           </div>
-        </nav>
+        </div>
+        <div class="container relative">
+          <div class="swiper-pagination !text-right pb-4"></div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Layout: Main -->
-    <main class="home-page">
-      <!-- Section: Banner -->
-      <section class="home-banner">
-        <div class="swiper home-banner__carousel">
-          <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide relative">
-              <figure class="carousel-image absolute top-0 left-0 size-full">
-                <img
-                  src="/images/home/banner/banner-1.webp"
-                  alt="home banner carousel image"
-                  class="size-full object-cover"
-                />
-              </figure>
-              <div class="container z-[2] relative">
-                <div
-                  class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]"
-                >
-                  <div
-                    class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]"
-                  >
-                    <span class="block text-white text-2xl font-bold mb-1"
-                      >ORBITA</span
-                    >
-                    Hotel Lock Passed UL-10C Test
-                  </div>
-                  <p
-                    class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4"
-                  >
-                    The UL-10C test evaluates the ability of a door lock to
-                    withstand a 450-degree Fahrenheit fire for 3 hours
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide relative">
-              <figure class="carousel-image absolute top-0 left-0 size-full">
-                <img
-                  src="/images/home/banner/banner-2.webp"
-                  alt="home banner carousel image"
-                  class="size-full object-cover"
-                />
-              </figure>
-              <div class="container z-[2] relative">
-                <div
-                  class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]"
-                >
-                  <div
-                    class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]"
-                  >
-                    <span class="block text-white text-2xl font-bold mb-1"
-                      >ORBITA</span
-                    >
-                    Smart Hotel Locks
-                  </div>
-                  <p
-                    class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4"
-                  >
-                    We are committed to providing you with high quality products
-                    and services Serving over 20,000 hotels in more than 120
-                    countries around the world
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide relative">
-              <figure class="carousel-image absolute top-0 left-0 size-full">
-                <img
-                  src="/images/home/banner/banner-3.webp"
-                  alt="home banner carousel image"
-                  class="size-full object-cover"
-                />
-              </figure>
-              <div class="container z-[2] relative">
-                <div
-                  class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]"
-                >
-                  <div
-                    class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]"
-                  >
-                    <span class="block text-white text-2xl font-bold mb-1"
-                      >ORBITA</span
-                    >
-                    Hotel Minibar
-                  </div>
-                  <ul
-                    class="carousel-description flex flex-col gap-2 text-lg font-regular text-white mt-4"
-                  >
-                    <li>Cooling by ammonia</li>
-                    <li>Nomoving part, no compressor</li>
-                    <li>Free maintenance & long life</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide relative">
-              <figure class="carousel-image absolute top-0 left-0 size-full">
-                <img
-                  src="/images/home/banner/banner-4.webp"
-                  alt="home banner carousel image"
-                  class="size-full object-cover"
-                />
-              </figure>
-              <div class="container z-[2] relative">
-                <div
-                  class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]"
-                >
-                  <div
-                    class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]"
-                  >
-                    <span class="block text-white text-2xl font-bold mb-1"
-                      >ORBITA</span
-                    >
-                    Hotel Safe
-                  </div>
-                  <ul
-                    class="carousel-description flex flex-col gap-2 text-lg font-regular text-white mt-4"
-                  >
-                    <li>Co5 MM Cold-Rolled Steel Door</li>
-                    <li>Two 3/4 inch (19MM) Diameter Steel Locking Bolts</li>
-                    <li>Scratch- Resistant Powder Coated Finish</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 5 -->
-            <div class="swiper-slide relative">
-              <figure class="carousel-image absolute top-0 left-0 size-full">
-                <img
-                  src="/images/home/banner/banner-5.webp"
-                  alt="home banner carousel image"
-                  class="size-full object-cover"
-                />
-              </figure>
-              <div class="container z-[2] relative">
-                <div
-                  class="home-banner__carousel--content min-h-[calc(100svh_-_186.11px)] flex flex-col justify-end pb-[100px]"
-                >
-                  <div
-                    class="carousel-title text-6xl leading-[1.15] font-bold text-white max-w-[590px]"
-                  >
-                    <span class="block text-white text-2xl font-bold mb-1"
-                      >ORBITA</span
-                    >
-                    Smart Hotel System
-                  </div>
-                  <p
-                    class="carousel-description para text-lg font-regular text-white max-w-[576px] mt-4"
-                  >
-                    We provides you with professional intelligent smart hotel
-                    solution
-                  </p>
-                </div>
-              </div>
+    <!-- Section: About -->
+    <section class="home-about py-24">
+      <div class="container">
+        <span class="home-about_label text-primary font-medium text-lg block mb-4">
+          About Us
+        </span>
+        <div class="grid grid-cols-2 gap-10">
+          <div class="home-about__left">
+            <h2 class="home-about_title ttl text-[42px] text-black font-bold max-w-[475px] leading-[1.1]">
+              To provide you with professional services and reliable products
+            </h2>
+            <div class="btn-wrap flex items-center gap-4 mt-10">
+              <a href="/about-us" class="btn btn-primary btn-capsule btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-circle-chevron-right">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m10 8 4 4-4 4" />
+                </svg>
+                Learn more
+              </a>
+              <a href="/about-us" class="btn btn-grey btn-capsule btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-circle-play">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+                Watch video
+              </a>
             </div>
           </div>
-          <div class="container relative">
-            <div class="swiper-pagination !text-right pb-4"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: About -->
-      <section class="home-about py-20">
-        <div class="container">
-          <span
-            class="home-about_label text-primary font-medium text-lg block mb-4"
-          >
-            About Us
-          </span>
-          <div class="grid grid-cols-2 gap-10">
-            <div class="home-about__left">
-              <h2
-                class="home-about_title ttl section-title max-w-[475px] leading-tight"
-              >
-                We are reputable hospitality products manufacturer
-              </h2>
-              <div class="btn-wrap flex items-center gap-10 mt-4">
-                <a href="/about-us">Learn more</a>
-                <a href="/about-us">Watch video</a>
+          <div class="home-about__right">
+            <p
+              class="home-about__description max-w-[576px] para text-base text-regular text-secondary leading-relaxed mb-4">
+              Smart Finger is a reputable hospitality products manufacturer
+              with ISO certified 46,000 square meters garden factory,
+              established to offer the best quality products with professional
+              and effective service to our customers.
+            </p>
+            <p
+              class="home-about__description max-w-[576px] para text-base text-regular text-secondary leading-relaxed mb-4">
+              Smart Finger series of products including hotel card locking
+              system, hotel in room safe , hotel minibar, touch screen switch,
+              hotel in room telephone, cabinet locker, smart hotel room system
+              and other hotel in room accessories , are products of years of
+              experience integrated with advanced technologies from Siemens ,
+              Dallas, Atmel, Philips etc. Orbita locking system certified by
+              Opera Fidelio and other popular PMS system, has just enabled
+              Orbita products to a wide range of compatibility.
+            </p>
+            <div class="home-about__stats grid grid-cols-3 gap-10 mt-10">
+              <div class="stat-item">
+                <div class="stat-count text-4xl text-black font-semibold">
+                  16+
+                </div>
+                <div class="stat-name text-secondary font-regular mt-2">
+                  Years Experience <br />
+                </div>
               </div>
-            </div>
-            <div class="home-about__right">
-              <p
-                class="home-about__description max-w-[576px] para text-lg text-regular text-secondary leading-normal"
-              >
-                Smart finger is a reputable hospitality products manufacturer
-                with ISO certified 46,000 square meters garden factory,
-                established to offer the best quality products with professional
-                and effective service to our customers.
-              </p>
+              <div class="stat-item">
+                <div class="stat-count text-4xl text-black font-semibold">
+                  20K+
+                </div>
+                <div class="stat-name text-secondary font-regular mt-2">
+                  Hotels
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-count text-4xl text-black font-semibold">
+                  75+
+                </div>
+                <div class="stat-name text-secondary font-regular mt-2">
+                  Countries
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Section: New Arrivals -->
-      <section class="home-newarrivals bg-[#fafafa] py-20">
-        <div class="container">
-          <h2 class="home-newarrivals__title ttl section-title">
-            New Arrivals
+    <!-- Section: Our Clients -->
+    <section class="home-clients bg-primary pt-24 pb-28">
+      <div class="container">
+        <div class="flex justify-between items-center gap-4 mb-16">
+          <h2 class="home-clients__title ttl section-title !text-white">
+            Our Clients
           </h2>
+          <p class="text-grey text-base para max-w-[410px] ms-auto text-right">
+            More than 20,000 hotels ,resorts, university dormitories etc which
+            covering 120 countries in the world
+          </p>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="home-clients__slider swiper pointer-events-none">
+        <div class="swiper-wrapper !ease-linear">
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/accor.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/barcelo.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/best-western.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/choice-hotels.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/hilton.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/huazhu.png" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/hyatt.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/ihg.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/jin-jiang-international.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/kempinski.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/mariott.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/warwick.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/wyndham.svg" alt="" class="size-full object-contain" />
+          </figure>
+        </div>
+      </div>
+      <div class="home-clients__sliderReverse swiper pointer-events-none mt-4">
+        <div class="swiper-wrapper !ease-linear">
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/accor.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/barcelo.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/best-western.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/choice-hotels.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/hilton.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/huazhu.png" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/hyatt.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/ihg.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/jin-jiang-international.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/kempinski.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/mariott.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/warwick.svg" alt="" class="size-full object-contain" />
+          </figure>
+          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+            <img src="/images/home/clients/wyndham.svg" alt="" class="size-full object-contain" />
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <!-- Layout: Footer -->
-    <footer class="main-footer"></footer>
+    <!-- Section: New Arrivals -->
+    <section class="home-newarrivals py-24">
+      <div class="container">
+        <h2 class="home-newarrivals__title ttl section-title mb-10">
+          New Arrivals
+        </h2>
+        <div class="home-newarrivals__grid flex flex-wrap -mx-1.5 gap-y-3">
+          <div class="flex-[0_0_30%] max-w-[30%] px-1.5">
+            <figure class="bento-grid__item size-full rounded-xl overflow-hidden">
+              <img src="/images/home/products/new arrivals/bento-product-1.webp" alt="product image"
+                class="size-full object-cover">
+            </figure>
+          </div>
+          <div class="flex flex-wrap flex-[0_0_70%] max-w-[70%] px-1.5 -mx-1.5 gap-y-3">
+            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+              <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex">
+                <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                  <img src="/images/home/products/new arrivals/bento-product-2.webp" alt="product image">
+                </figure>
+                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                  <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">ORBITA S3479A
+                    Hotel smart
+                    lock
+                  </div>
+                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">Split Design
+                    Style</div>
+                  <div
+                    class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                    Hotel Locks</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+              <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex">
+                <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                  <img src="/images/home/products/new arrivals/bento-product-4.webp" alt="product image">
+                </figure>
+                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                  <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">OBT-2043MB
+                    Hotel Room Safe
+                  </div>
+                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">3mm
+                    Cold-Rolled Steel Door</div>
+                  <div
+                    class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                    Hotel Room Safe</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+              <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex">
+                <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                  <img src="/images/home/products/new arrivals/bento-product-2.webp" alt="product image">
+                </figure>
+                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                  <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">E4031 hotel
+                    lock</div>
+                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">LCD showing
+                    "welcome", room number, date time, weekday</div>
+                  <div
+                    class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                    Hotel RFID Lock</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+              <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex">
+                <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                  <img src="/images/home/products/new arrivals/bento-product-5.webp" alt="product image">
+                </figure>
+                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                  <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">Hotel Minibar
+                    OBT-40DX</div>
+                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">Cool Quiet
+                    High performance with superior</div>
+                  <div
+                    class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                    Hotel Minibar</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-[0_0_100%] max-w-full px-1.5">
+            <figure class="bento-grid__item size-full rounded-xl overflow-hidden">
+              <img src="/public/images/home/products/new arrivals/bento-product-6.webp" alt=""
+                class="size-full object-cover">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script type="module" src="./scripts/main.js"></script>
-  </body>
+    <!-- Section: Our Products -->
+    <section class="home-products pt-10 pb-24">
+      <div class="container">
+        <div class="flex justify-between items-center gap-4 mb-16">
+          <h2 class="home-newarrivals__title ttl section-title">
+            Our Products
+          </h2>
+          <p class="para text-base text-secondary font-medium max-w-[320px] text-right">
+            We provide professional smart hotel and smart home solutions.
+          </p>
+        </div>
+        <div class="home-products__categories flex justify-center gap-6">
+          <div class="category-item tab-active group cursor-pointer" data-tab="hotel-rfid-locks">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-1.png" alt="Hotel RFID Locks"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel RFID Locks
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-in-room-safe">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-2.png" alt="Hotel In Room Safe"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel In Room Safe
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-minibar">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-3.png" alt="Hotel Minibar"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Minibar
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="smart-hotel">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-4.png" alt="Smart Hotel"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Smart Hotel
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="bathroom-locks">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-5.png" alt="Bathroom Locks"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Bathroom Locks
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="cabinet-locks">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-6.png" alt="Cabinet Locks"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Cabinet Locks
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-lock-accessories">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-7.png" alt="Hotel Lock Accessories"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Lock Accessories
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-phone">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-8.png" alt="Hotel Phone"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Phone
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="in-room-switches">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-9.png" alt="In Room Switches"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              In Room Switches
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-hairdrivers">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-10.png" alt="Hotel Hairdrivers"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Hairdrivers
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-kettles">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-11.png" alt="Hotel Kettles"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Kettles
+            </div>
+          </div>
+          <div class="category-item group cursor-pointer" data-tab="hotel-door-plates">
+            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+              <img src="/images/home/categories/category-12.png" alt="Hotel Door Plate"
+                class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
+            </figure>
+            <div
+              class="category-name text-secondary text-sm font-regular leading-snug text-center mt-3 max-w-20 group-hover:text-tertiary transition-colors duration-300 ease-in-out">
+              Hotel Door Plate
+            </div>
+          </div>
+        </div>
+        <div class="home-products__list grid grid-cols-5 gap-4 mt-14">
+          <!-- Category 1 -->
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-1.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              S3479A Hotel Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-2.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              S3074 Hotel RFID Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-3.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              E4031 hotel lock and hotel locks system
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-4.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              E3041 Hotel RFID Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-5.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              E4041 Hotel RFID Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-6.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              S3072 Hotel Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-7.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              S3078 Hotel Lock
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-rfid-locks">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-1/product-8.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              E3064P Hotel Lock
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-in-room-safe">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-2/product-1.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              Hotel Room Safe OBT-4135MJ
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-in-room-safe">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-2/product-2.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              Hotel Room Safe OBT-2042MJ
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-in-room-safe">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-2/product-3.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              Hotel Room Safe OBT-4135MG
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-in-room-safe">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-2/product-4.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              Hotel Room Safe OBT-2043MB
+            </div>
+          </div>
+          <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
+            data-category="hotel-in-room-safe">
+            <a href="" class="absolute inset-0"></a>
+            <figure class="product-image bg-white">
+              <img src="/images/home/products/category-2/product-5.webp" alt="product image"
+                class="aspect-square size-full object-contain" />
+            </figure>
+            <div
+              class="product-name text-base text-black group-hover:text-tertiary font-semibold text-center px-4 py-4 transition-colors duration-300 ease-in-out">
+              Hotel Room Safe OBT-2042MG
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tailwind dynamic classes -->
+    <div class="hidden"></div>
+  </main>
+
+  <!-- Layout: Footer -->
+  <footer class="main-footer">
+    <div class="footer-top bg-black py-20">
+      <div class="container">
+        <figure class="footer-logo max-w-[150px]">
+          <img src="/images/smart-finger-logo.png" alt="smart finger logo" />
+        </figure>
+        <div class="flex gap-10 mt-20">
+          <div class="flex-1 flex gap-20">
+            <nav class="footer-nav">
+              <h2 class="ttl text-white text-lg font-bold mb-4">
+                Quick Links
+              </h2>
+              <ul class="footer-nav__links flex flex-col gap-3">
+                <li
+                  class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                  <a href="/">Home</a>
+                </li>
+                <li
+                  class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                  <a href="/">About Us</a>
+                </li>
+                <li
+                  class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                  <a href="/">Products</a>
+                </li>
+                <li
+                  class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                  <a href="/">Solutions</a>
+                </li>
+                <li
+                  class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                  <a href="/">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer-nav">
+              <h2 class="ttl text-white text-lg font-bold mb-4">Products</h2>
+              <div class="flex gap-10">
+                <ul class="footer-nav__links flex flex-col gap-3">
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel RFID Locks</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel In Room Safe</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Minibar</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Smart Hotel</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Bathroom Locks</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Hairdrivers</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Kettles</a>
+                  </li>
+                </ul>
+                <ul class="footer-nav__links flex flex-col gap-3">
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Cabinet Locks</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Lock Accessories</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Phone</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Smart Hotel</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">In Room Switches</a>
+                  </li>
+                  <li
+                    class="text-grey text-[15px] font-light hover:text-tertiary transition-colors duration-300 ease-in-out">
+                    <a href="/">Hotel Door Plate</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="">
+              <h2 class="ttl text-white text-lg font-bold mb-4">
+                Office Address
+              </h2>
+              <p class="office-address text-grey para text-[15px]] font-regular leading-relaxed">
+                Room 801-804, Building A,
+                <br />
+                Zhongmin Time Plaza, 12 Sungang East
+              </p>
+              <h2 class="ttl text-white text-lg font-bold mb-4 mt-8">
+                Office Contacts
+              </h2>
+              <div class="flex items-center gap-2 text-grey mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-mail w-4">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <a href="mailto:xyz@abc.com" target="_blank" rel="noopener noreferrer"
+                  class="text-grey hover:text-tertiary transition-colors duration-300 ease-in-out text-[15px]">xyz@abc.com</a>
+              </div>
+              <div class="flex items-center gap-2 text-grey">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-phone w-4">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <a href="tel:9898989898" target="_blank" rel="noopener noreferrer"
+                  class="text-grey hover:text-tertiary transition-colors duration-300 ease-in-out text-[15px]">+91 9898
+                  989 898</a>
+              </div>
+            </div>
+          </div>
+          <div class="ms-auto">
+            <h2 class="ttl text-white text-lg font-bold mb-4">
+              Follow us on
+            </h2>
+            <ul class="footer-socials text-white flex items-center gap-6">
+              <li>
+                <a href="https://" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-110 hover:text-tertiary transition-all duration-300 ease-in-out inline-block will-change-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                    class="w-7">
+                    <path fill="currentColor"
+                      d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-110 hover:text-tertiary transition-all duration-300 ease-in-out inline-block will-change-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30"
+                    class="w-7">
+                    <path fill="currentColor"
+                      d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-110 hover:text-tertiary transition-all duration-300 ease-in-out inline-block will-change-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                    class="w-7">
+                    <path fill="currentColor"
+                      d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-110 hover:text-tertiary transition-all duration-300 ease-in-out inline-block will-change-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                    class="w-7">
+                    <path fill="currentColor"
+                      d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-110 hover:text-tertiary transition-all duration-300 ease-in-out inline-block will-change-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                    class="w-7">
+                    <path fill="currentColor"
+                      d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-black py-6 border-t border-[#313131]">
+      <div class="container flex justify-between items-center gap-4">
+        <div class="footer-copyrights text-white text-sm font-medium">
+          Copyright © 2024 Smart Finger. All rights reserved.
+        </div>
+        <ul class="footer-legals flex items-center gap-10">
+          <li class="text-white hover:text-tertiary transition-colors duration-300 ease-in-out text-sm font-medium">
+            <a href="">Privacy Policy</a>
+          </li>
+          <li class="text-white hover:text-tertiary transition-colors duration-300 ease-in-out text-sm font-medium">
+            <a href="">Terms & Conditions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>

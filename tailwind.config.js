@@ -3,6 +3,7 @@
 const colors = {
   primary: "var(--sf-primary)",
   secondary: "var(--sf-secondary)",
+  tertiary: "var(--sf-tertiary)",
   black: "var(--sf-black)",
   white: "var(--sf-white)",
   error: "var(--sf-error)",
