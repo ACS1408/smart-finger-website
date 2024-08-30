@@ -109,7 +109,7 @@
     padding-inline: var(--sf-btn-padding-x);
     padding-block: var(--sf-btn-padding-y);
     font-weight: var(--sf-font-medium);
-    @apply transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center transition-all duration-300 ease-in-out;
     &.btn-capsule {
       border-radius: var(--sf-btn-radius);
     }
@@ -149,9 +149,14 @@
           @apply text-tertiary;
         }
         .category-image {
-          @apply border-tertiary
+          @apply border-tertiary;
         }
       }
+    }
+  }
+  .no-scrollbar {
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }

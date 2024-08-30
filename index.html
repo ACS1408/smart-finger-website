@@ -17,13 +17,13 @@
 <body>
   <!-- Layout: Header -->
   <header class="main-header bg-white py-4 border-b border-grey sticky top-0 z-[1024]">
-    <div class="container flex items-center justify-between gap-4">
+    <div class="container flex items-center justify-between gap-4 relative">
       <a href="/" class="max-w-[150px]">
         <figure class="main-header__logo">
           <img src="/images/smart-finger-logo.png" alt="Smart Finger Logo" />
         </figure>
       </a>
-      <nav class="main-header__nav flex items-center gap-10">
+      <nav class="main-header__nav lg:flex items-center gap-10">
         <div class="main-header__nav--item">
           <a href="/">Home</a>
         </div>
@@ -40,6 +40,11 @@
           <a href="/">Contact</a>
         </div>
       </nav>
+      <div class="hamburger-menu grid gap-1.5 z-[1025] absolute top-1/2 right-4 -translate-y-1/2 lg:hidden">
+        <span class="w-8 h-1 bg-black rounded-md transition-transform duration-300 ease-in-out"></span>
+        <span class="w-8 h-1 bg-black rounded-md transition-all duration-300 ease-in-out"></span>
+        <span class="w-8 h-1 bg-black rounded-md transition-transform duration-300 ease-in-out"></span>
+      </div>
     </div>
   </header>
 
@@ -154,24 +159,25 @@
           </div>
         </div>
         <div class="container relative">
-          <div class="swiper-pagination !text-right pb-4"></div>
+          <div class="swiper-pagination lg:!text-right !text-center pb-4"></div>
         </div>
       </div>
     </section>
 
     <!-- Section: About -->
-    <section class="home-about py-24">
+    <section class="home-about lg:py-24 py-16">
       <div class="container">
         <span class="home-about_label text-primary font-medium text-lg block mb-4">
           About Us
         </span>
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid lg:grid-cols-2 sm:gap-10 gap-6">
           <div class="home-about__left">
-            <h2 class="home-about_title ttl text-[42px] text-black font-bold max-w-[475px] leading-tight">
+            <h2
+              class="home-about_title ttl lg:text-[42px] sm:text-[36px] text-[28px] text-black font-bold max-w-[475px] leading-snug">
               To provide you with professional services and reliable products
             </h2>
-            <div class="btn-wrap flex items-center gap-4 mt-10">
-              <a href="/about-us" class="btn btn-primary btn-capsule btn-icon">
+            <div class="btn-wrap flex flex-wrap items-center gap-4 sm:mt-10 mt-6">
+              <a href="/about-us" class="btn btn-primary btn-capsule btn-icon xs:w-full w-max">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-circle-chevron-right">
@@ -180,7 +186,7 @@
                 </svg>
                 Learn more
               </a>
-              <a href="/about-us" class="btn btn-grey btn-capsule btn-icon">
+              <a href="/about-us" class="btn btn-grey btn-capsule btn-icon xs:w-full w-max">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-circle-play">
@@ -210,28 +216,28 @@
               Opera Fidelio and other popular PMS system, has just enabled
               Orbita products to a wide range of compatibility.
             </p>
-            <div class="home-about__stats grid grid-cols-3 gap-10 mt-10">
+            <div class="home-about__stats flex flex-wrap lg:gap-16 gap-8 mt-10">
               <div class="stat-item">
-                <div class="stat-count text-4xl text-black font-semibold">
+                <div class="stat-count sm:text-4xl text-3xl text-black font-semibold">
                   16+
                 </div>
-                <div class="stat-name text-secondary font-regular mt-2">
+                <div class="stat-name text-base text-secondary font-regular mt-2">
                   Years Experience <br />
                 </div>
               </div>
               <div class="stat-item">
-                <div class="stat-count text-4xl text-black font-semibold">
+                <div class="stat-count sm:text-4xl text-3xl text-black font-semibold">
                   20K+
                 </div>
-                <div class="stat-name text-secondary font-regular mt-2">
+                <div class="stat-name text-base text-secondary font-regular mt-2">
                   Hotels
                 </div>
               </div>
               <div class="stat-item">
-                <div class="stat-count text-4xl text-black font-semibold">
+                <div class="stat-count sm:text-4xl text-3xl text-black font-semibold">
                   75+
                 </div>
-                <div class="stat-name text-secondary font-regular mt-2">
+                <div class="stat-name text-base text-secondary font-regular mt-2">
                   Countries
                 </div>
               </div>
@@ -242,100 +248,100 @@
     </section>
 
     <!-- Section: Our Clients -->
-    <section class="home-clients bg-primary pt-24 pb-28">
+    <section class="home-clients bg-primary lg:pt-24 lg:pb-28 pt-16 pb-16">
       <div class="container">
-        <div class="flex justify-between items-center gap-4 mb-16">
-          <h2 class="home-clients__title ttl section-title !text-white">
+        <div class="lg:flex lg:justify-between lg:items-center lg:gap-4 lg:mb-16 mb-8">
+          <h2 class="home-clients__title ttl section-title !text-white lg:mb-0 mb-4">
             Our Clients
           </h2>
-          <p class="text-grey text-base para max-w-[410px] ms-auto text-right">
-            More than 20,000 hotels ,resorts, university dormitories etc which
+          <p class="text-grey text-base para max-w-[410px] lg:ms-auto lg:text-right">
+            More than 20,000 hotels, resorts, university dormitories etc which
             covering 120 countries in the world
           </p>
         </div>
       </div>
       <div class="home-clients__slider swiper pointer-events-none">
         <div class="swiper-wrapper !ease-linear">
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/accor.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/barcelo.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/best-western.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/choice-hotels.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/hilton.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/huazhu.png" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/hyatt.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/ihg.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/jin-jiang-international.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/kempinski.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/mariott.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/warwick.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/wyndham.svg" alt="" class="size-full object-contain" />
           </figure>
         </div>
       </div>
       <div class="home-clients__sliderReverse swiper pointer-events-none mt-4">
         <div class="swiper-wrapper !ease-linear">
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/accor.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/barcelo.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/best-western.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/choice-hotels.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/hilton.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/huazhu.png" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/hyatt.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/ihg.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/jin-jiang-international.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/kempinski.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/mariott.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/warwick.svg" alt="" class="size-full object-contain" />
           </figure>
-          <figure class="client-logo swiper-slide !w-[10%] !h-24 bg-white rounded-md px-6 py-4">
+          <figure class="client-logo swiper-slide lg:!w-64 md:!w-60 sm:!w-52 !w-44 !h-24 bg-white rounded-md px-6 py-4">
             <img src="/images/home/clients/wyndham.svg" alt="" class="size-full object-contain" />
           </figure>
         </div>
@@ -343,32 +349,33 @@
     </section>
 
     <!-- Section: New Arrivals -->
-    <section class="home-newarrivals py-24">
+    <section class="home-newarrivals lg:py-24 py-16">
       <div class="container">
         <h2 class="home-newarrivals__title ttl section-title mb-10">
           New Arrivals
         </h2>
         <div class="home-newarrivals__grid flex flex-wrap -mx-1.5 gap-y-3">
-          <div class="flex-[0_0_30%] max-w-[30%] px-1.5">
+          <div class="lg:flex-[0_0_30%] lg:max-w-[30%] md:flex-[0_0_50%] md:max-w-[50%] w-full px-1.5">
             <figure class="bento-grid__item size-full rounded-xl overflow-hidden relative">
               <a href="" class="absolute inset-0"></a>
               <img src="/images/home/products/new arrivals/bento-product-1.webp" alt="product image"
                 class="size-full object-cover">
             </figure>
           </div>
-          <div class="flex flex-wrap flex-1 px-1.5 -mx-1.5 gap-y-3">
-            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+          <div class="flex flex-wrap md:flex-1 px-1.5 flex-[0_0_100%] md:max-w-full -mx-1.5 gap-y-3">
+            <div class="lg:flex-[0_0_50%] lg:max-w-[50%] flex-[0_0_100%] max-w-full px-1.5">
               <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
                 <a href="" class="absolute inset-0 z-[2]"></a>
                 <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
                   <img src="/images/home/products/new arrivals/bento-product-2.webp" alt="product image">
                 </figure>
-                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
                   <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">ORBITA S3479A
                     Hotel smart
                     lock
                   </div>
-                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">Split Design
+                  <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">Split
+                    Design
                     Style</div>
                   <div
                     class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
@@ -376,17 +383,17 @@
                 </div>
               </div>
             </div>
-            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+            <div class="lg:flex-[0_0_50%] lg:max-w-[50%] flex-[0_0_100%] max-w-full px-1.5">
               <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
                 <a href="" class="absolute inset-0 z-[2]"></a>
                 <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
                   <img src="/images/home/products/new arrivals/bento-product-4.webp" alt="product image">
                 </figure>
-                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
                   <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">OBT-2043MB
                     Hotel Room Safe
                   </div>
-                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">3mm
+                  <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">3mm
                     Cold-Rolled Steel Door</div>
                   <div
                     class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
@@ -394,16 +401,17 @@
                 </div>
               </div>
             </div>
-            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+            <div class="lg:flex-[0_0_50%] lg:max-w-[50%] flex-[0_0_100%] max-w-full px-1.5 lg:block hidden">
               <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
                 <a href="" class="absolute inset-0 z-[2]"></a>
                 <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
                   <img src="/images/home/products/new arrivals/bento-product-2.webp" alt="product image">
                 </figure>
-                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
                   <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">E4031 hotel
                     lock</div>
-                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">LCD showing
+                  <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">LCD
+                    showing
                     "welcome", room number, date time, weekday</div>
                   <div
                     class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
@@ -411,21 +419,56 @@
                 </div>
               </div>
             </div>
-            <div class="flex-[0_0_50%] max-w-[50%] px-1.5">
+            <div class="lg:flex-[0_0_50%] lg:max-w-[50%] flex-[0_0_100%] max-w-full px-1.5 lg:block hidden">
               <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
                 <a href="" class="absolute inset-0 z-[2]"></a>
                 <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
                   <img src="/images/home/products/new arrivals/bento-product-5.webp" alt="product image">
                 </figure>
-                <div class="product-details p-4 pt-8 relative flex-1 bg-white">
+                <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
                   <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">Hotel Minibar
                     OBT-40DX</div>
-                  <div class="product-description max-w-[200px] text-sm text-secondary leading-snug mt-2">Cool Quiet
+                  <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">Cool
+                    Quiet
                     High performance with superior</div>
                   <div
                     class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
                     Hotel Minibar</div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex-[0_0_50%] md:max-w-[50%] w-full px-1.5 lg:hidden">
+            <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
+              <a href="" class="absolute inset-0 z-[2]"></a>
+              <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                <img src="/images/home/products/new arrivals/bento-product-2.webp" alt="product image">
+              </figure>
+              <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
+                <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">E4031 hotel
+                  lock</div>
+                <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">LCD showing
+                  "welcome", room number, date time, weekday</div>
+                <div
+                  class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                  Hotel RFID Lock</div>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex-[0_0_50%] md:max-w-[50%] w-full px-1.5 lg:hidden">
+            <div class="bento-grid__item product-card rounded-xl border border-grey overflow-hidden flex relative">
+              <a href="" class="absolute inset-0 z-[2]"></a>
+              <figure class="product-image border-r border-grey flex-[0_0_35%] max-w-[35%]">
+                <img src="/images/home/products/new arrivals/bento-product-5.webp" alt="product image">
+              </figure>
+              <div class="product-details p-4 pt-8 pb-12 relative flex-1 bg-white">
+                <div class="product-title max-w-[150px] text-lg text-black font-semibold leading-snug">Hotel Minibar
+                  OBT-40DX</div>
+                <div class="product-description max-w-[200px] mb-2 text-sm text-secondary leading-snug mt-2">Cool Quiet
+                  High performance with superior</div>
+                <div
+                  class="product-category bg-tertiary text-base font-light px-4 py-2 text-white absolute bottom-0 left-0 w-full">
+                  Hotel Minibar</div>
               </div>
             </div>
           </div>
@@ -441,19 +484,20 @@
     </section>
 
     <!-- Section: Our Products -->
-    <section class="home-products pt-10 pb-24">
+    <section class="home-products lg:pt-10 lg:pb-24 pt-4 pb-16">
       <div class="container">
-        <div class="flex justify-between items-center gap-4 mb-16">
-          <h2 class="home-newarrivals__title ttl section-title">
+        <div class="lg:flex lg:justify-between lg:items-center lg:gap-4 lg:mb-16 mb-10">
+          <h2 class="home-newarrivals__title ttl section-title lg:mb-0 mb-4">
             Our Products
           </h2>
-          <p class="para text-base text-secondary font-medium max-w-[320px] text-right">
+          <p class="para text-base text-secondary font-medium max-w-[320px] lg:text-right">
             We provide professional smart hotel and smart home solutions.
           </p>
         </div>
-        <div class="home-products__categories flex justify-center gap-6">
+        <div class="home-products__categories flex justify-between gap-6 overflow-auto no-scrollbar">
           <div class="category-item tab-active group cursor-pointer" data-tab="hotel-rfid-locks">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-1.png" alt="Hotel RFID Locks"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -463,7 +507,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-in-room-safe">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-2.png" alt="Hotel In Room Safe"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -473,7 +518,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-minibar">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-3.png" alt="Hotel Minibar"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -483,7 +529,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="smart-hotel">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-4.png" alt="Smart Hotel"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -493,7 +540,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="bathroom-locks">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-5.png" alt="Bathroom Locks"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -503,7 +551,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="cabinet-locks">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-6.png" alt="Cabinet Locks"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -513,7 +562,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-lock-accessories">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-7.png" alt="Hotel Lock Accessories"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -523,7 +573,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-phone">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-8.png" alt="Hotel Phone"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -533,7 +584,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="in-room-switches">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-9.png" alt="In Room Switches"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -543,7 +595,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-hairdrivers">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-10.png" alt="Hotel Hairdrivers"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -553,7 +606,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-kettles">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-11.png" alt="Hotel Kettles"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -563,7 +617,8 @@
             </div>
           </div>
           <div class="category-item group cursor-pointer" data-tab="hotel-door-plates">
-            <figure class="category-image size-20 rounded-full border border-grey flex justify-center items-center">
+            <figure
+              class="category-image md:size-20 size-16 rounded-full border border-grey flex justify-center items-center">
               <img src="/images/home/categories/category-12.png" alt="Hotel Door Plate"
                 class="group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out" />
             </figure>
@@ -573,7 +628,7 @@
             </div>
           </div>
         </div>
-        <div class="home-products__list grid grid-cols-5 gap-4 mt-14">
+        <div class="home-products__list grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 mt-14">
           <!-- Category 1 -->
           <div class="product-card border border-grey rounded-lg relative group overflow-hidden"
             data-category="hotel-rfid-locks">
@@ -743,13 +798,13 @@
 
   <!-- Layout: Footer -->
   <footer class="main-footer">
-    <div class="footer-top bg-black py-20">
+    <div class="footer-top bg-black lg:pt-20 lg:pb-20 pt-16 pb-10 ">
       <div class="container">
         <figure class="footer-logo max-w-[150px]">
           <img src="/images/smart-finger-logo.png" alt="smart finger logo" />
         </figure>
-        <div class="flex gap-10 mt-20">
-          <div class="flex-1 flex gap-20">
+        <div class="flex flex-wrap gap-10 lg:mt-20 mt-16 xl:flex-row flex-col">
+          <div class="flex-1 flex flex-wrap xxl:gap-20 lg:gap-6 gap-16 xl:justify-start lg:justify-between">
             <nav class="footer-nav">
               <h2 class="ttl text-white text-lg font-bold mb-4">
                 Quick Links
@@ -873,7 +928,7 @@
               </div>
             </div>
           </div>
-          <div class="ms-auto">
+          <div class="xl:ms-auto">
             <h2 class="ttl text-white text-lg font-bold mb-4">
               Follow us on
             </h2>
@@ -939,7 +994,7 @@
       </div>
     </div>
     <div class="footer-bottom bg-black py-6 border-t border-[#313131]">
-      <div class="container flex justify-between items-center gap-4">
+      <div class="container flex flex-wrap md:justify-between justify-center items-center gap-4">
         <div class="footer-copyrights text-white text-sm font-medium">
           Copyright © 2024 Smart Finger. All rights reserved.
         </div>
