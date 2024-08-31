@@ -37,6 +37,7 @@ const container = {
 };
 
 const screens = {
+  xxs: { max: "320px" },
   xs: { max: "576px" },
   sm: "576px",
   md: "768px",
