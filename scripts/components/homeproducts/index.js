@@ -1,6 +1,4 @@
 (() => {
-  console.log("homeproducts scripts loaded");
-
   const categoryItem = document.querySelectorAll(
     ".home-products__categories .category-item"
   );

@@ -1,8 +1,6 @@
 import Swiper from "swiper/bundle";
 
 (() => {
-  console.log("homeclients scripts loaded");
-
   const clientsSlider = new Swiper(".home-clients__slider", {
     slidesPerView: "auto",
     spaceBetween: 16,
